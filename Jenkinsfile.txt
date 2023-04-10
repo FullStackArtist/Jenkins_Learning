@@ -1,0 +1,17 @@
+pipeline {
+	agent any
+
+	stages{
+		stage('version'){
+		steps{
+		sh 'python3 --version'
+	}
+}
+	stage('running python file'){
+		steps{
+		sh 'python3 Jenkins01.py'
+}
+}
+
+}
+	}
